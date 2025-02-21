@@ -52,14 +52,10 @@ gState.setAsync("todos", async (prev) => {
 gState.append("todos", { id: 1, text: "Buy groceries" });
 
 // Merge into an object
-gState.append("user", { age: 31 });
-
-// Update nested state
-gState.append("user.profile", { email: "john@example.com" }, ["profile"]);`,
+gState.append("user", { age: 31 });`,
       details: [
         "Append values to an array or merge properties into an object.",
         "Useful for updating nested state or adding items to a list.",
-        "Supports updating deeply nested state using a path array.",
       ],
     },
     {
@@ -86,7 +82,6 @@ gState.reset("theme");`,
       details: [
         "Reset a state property to its initial value.",
         "Useful for cleaning up state or reverting to default values.",
-        "Initial values are stored when the state is first created.",
       ],
     },
   ];

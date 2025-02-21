@@ -73,6 +73,16 @@ const data = {
         },
       ],
     },
+    {
+      title: "afterRouter",
+      url: "/docs/gstate/installation",
+      items: [
+        {
+          title: "Coming Soon...",
+          url: "",
+        },
+      ],
+    },
   ],
 };
 

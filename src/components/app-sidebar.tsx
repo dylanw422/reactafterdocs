@@ -57,6 +57,10 @@ const data = {
           title: "Modify State",
           url: "/docs/gstate/modify-state",
         },
+        {
+          title: "Examples",
+          url: "/docs/gstate/examples",
+        },
       ],
     },
     {

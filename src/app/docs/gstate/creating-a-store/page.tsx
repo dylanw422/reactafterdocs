@@ -73,7 +73,7 @@ console.log(user); // { name: "John", age: 30 }
   );
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-12">
       {sections.map((section, index) => {
         return (
           <div key={index}>

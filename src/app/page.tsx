@@ -19,10 +19,10 @@ export default function Home() {
       <Hero />
       <Logos />
       <Examples />
-      <UseCases />
+      {/* <UseCases /> */}
       <Features />
       {/* <Statistics /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Pricing /> */}
       <Community />
       {/* <Blog /> */}

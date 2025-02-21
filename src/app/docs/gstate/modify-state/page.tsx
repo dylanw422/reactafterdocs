@@ -10,7 +10,8 @@ export default async function UpdatingState() {
       details: [],
     },
     {
-      title: "Synchronous Updates with `gState.set`",
+      title: "Synchronous Updates with ",
+      method: "gState.set()",
       description:
         "Use `gState.set` to update state synchronously. You can pass a new value directly or a function that receives the previous state and returns the updated value. This is ideal for simple state updates that don't require asynchronous operations.",
       code: `// Update state with a new value
@@ -24,7 +25,8 @@ gState.set("counter", (prev) => prev + 1);`,
       ],
     },
     {
-      title: "Asynchronous Updates with `gState.setAsync`",
+      title: "Asynchronous Updates with ",
+      method: "gState.setAsync()",
       description:
         "Use `gState.setAsync` to update state after an asynchronous operation, such as fetching data from an API. The function passed to `setAsync` can return a new value directly or a function that receives the previous state and returns the updated value. This is ideal for handling side effects like API calls.",
       code: `// Update state after fetching data
@@ -45,7 +47,8 @@ gState.setAsync("todos", async (prev) => {
       ],
     },
     {
-      title: "Appending or Merging Values with `gState.append`",
+      title: "Appending or Merging Values with ",
+      method: "gState.append()",
       description:
         "Use `gState.append` to append values to an array or merge properties into an object. This is useful for updating nested state or adding items to a list.",
       code: `// Append to an array
@@ -59,7 +62,8 @@ gState.append("user", { age: 31 });`,
       ],
     },
     {
-      title: "Batch Updates with `gState.batch`",
+      title: "Batch Updates with ",
+      method: "gState.batch()",
       description:
         "Use `gState.batch` to update multiple state properties at once. This is useful for reducing re-renders when updating multiple values.",
       code: `// Update multiple state properties
@@ -74,7 +78,8 @@ gState.batch({
       ],
     },
     {
-      title: "Resetting State with `gState.reset`",
+      title: "Resetting State with ",
+      method: "gState.reset()",
       description:
         "Use `gState.reset` to reset a state property to its initial value. This is useful for cleaning up state when it's no longer needed.",
       code: `// Reset state to its initial value
@@ -103,7 +108,14 @@ gState.reset("theme");`,
       {sections.map((section, index) => {
         return (
           <div key={index}>
-            <h1 className="text-xl font-bold">{section.title}</h1>
+            <h1 className="text-xl font-bold">
+              {section.title}
+              {section.method && (
+                <span className="p-1 px-2 border rounded-md font-mono">
+                  {section.method}
+                </span>
+              )}
+            </h1>
             <p className="mt-1 text-muted-foreground">{section.description}</p>
             {section.details && section.details.length > 0 && (
               <ul className="mt-4 list-disc list-inside text-muted-foreground">

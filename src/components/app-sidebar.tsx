@@ -42,6 +42,24 @@ const data = {
       ],
     },
     {
+      title: "After App",
+      url: "/docs/after-app/installation",
+      items: [
+        {
+          title: "Installation",
+          url: "",
+        },
+        {
+          title: "Routing",
+          url: "",
+        },
+        {
+          title: "Data Fetching",
+          url: "",
+        },
+      ],
+    },
+    {
       title: "gState",
       url: "/docs/gstate/installation",
       items: [
@@ -73,16 +91,6 @@ const data = {
         },
       ],
     },
-    {
-      title: "afterRouter",
-      url: "/docs/gstate/installation",
-      items: [
-        {
-          title: "Coming Soon...",
-          url: "",
-        },
-      ],
-    },
   ],
 };
 
@@ -103,16 +111,16 @@ export function AppSidebar({
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <a href="#">
+              <Link href="/">
                 <div className="flex aspect-square size-8 items-center justify-center">
                   <img className="rounded-sm" src="/after.webp" alt="" />
                 </div>
 
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-semibold">Documentation</span>
-                  <span className="">v1.0.4</span>
+                  <span className="">v1.0.0</span>
                 </div>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>

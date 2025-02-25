@@ -5,6 +5,7 @@ import {
   CodeIcon,
   FolderOpen,
   GlobeIcon,
+  Network,
   PlugIcon,
   UsersIcon,
   ZapIcon,
@@ -34,6 +35,12 @@ export const siteConfig = {
   },
   features: [
     {
+      name: "After App",
+      description:
+        "A fullstack framework for Vite with a focus on speed and developer experience.",
+      icon: <Network className="h-6 w-6" />,
+    },
+    {
       name: "gState",
       description:
         "Global state management with no boilerplate and a focus on simplicity.",
@@ -43,11 +50,6 @@ export const siteConfig = {
       name: "qFetch",
       description: "COMING SOON...",
       icon: <Braces className="h-6 w-6" />,
-    },
-    {
-      name: "AfterRouter",
-      description: "COMING SOON...",
-      icon: <FolderOpen className="h-6 w-6" />,
     },
   ],
   pricing: [

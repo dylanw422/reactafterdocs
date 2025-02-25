@@ -12,6 +12,21 @@ interface FeatureOption {
 const featureOptions: FeatureOption[] = [
   {
     id: 1,
+    title: "After App",
+    description: "A fullstack framework for Vite",
+    code: `export const Route = createRootRoute({
+  component: () => (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className="bg-background h-[100dvh]">
+        <Outlet />
+        <ThemeIcon />
+      </div>
+    </ThemeProvider>
+  ),
+});`,
+  },
+  {
+    id: 2,
     title: "gState",
     description: "An intuitive global state management library.",
     code: `import { gState } from "@react-after/gstate"
@@ -35,7 +50,7 @@ export async function Examples() {
     featureOptions.map(async (feature) => ({
       ...feature,
       code: await codeToHtml(feature.code, {
-        lang: "typescript",
+        lang: "tsx",
         theme: "github-dark",
       }),
     }))

@@ -47,15 +47,19 @@ const data = {
       items: [
         {
           title: "Installation",
-          url: "",
+          url: "/docs/after-app/installation",
+        },
+        {
+          title: "Production",
+          url: "/docs/after-app/production",
         },
         {
           title: "Routing",
-          url: "",
+          url: "/docs/after-app/routing",
         },
         {
           title: "Data Fetching",
-          url: "",
+          url: "/docs/after-app/data-fetching",
         },
       ],
     },
@@ -100,7 +104,9 @@ export function AppSidebar({
 }: {
   path: string;
 } & React.ComponentProps<typeof Sidebar>) {
-  const section = path.split("/")[path.split("/").length - 2];
+  const section = path
+    .split("/")
+    [path.split("/").length - 2].replaceAll("-", " ");
   const subsection = path
     .split("/")
     [path.split("/").length - 1].replaceAll("-", " ");
@@ -113,7 +119,7 @@ export function AppSidebar({
             <SidebarMenuButton size="lg" asChild>
               <Link href="/">
                 <div className="flex aspect-square size-8 items-center justify-center">
-                  <img className="rounded-sm" src="/after.webp" alt="" />
+                  <img className="rounded-sm" src="/afterA.webp" alt="" />
                 </div>
 
                 <div className="flex flex-col gap-0.5 leading-none">

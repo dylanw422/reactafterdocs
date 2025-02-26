@@ -19,7 +19,6 @@ export function Header() {
           title="brand-logo"
           className="relative mr-6 flex items-center space-x-2"
         >
-          <Icons.logo className="w-auto" />
           <span className="font-semibold text-lg">{siteConfig.name}</span>
         </Link>
         <div className="hidden lg:block">

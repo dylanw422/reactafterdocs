@@ -104,7 +104,6 @@ function HeroCTA() {
             "w-full sm:w-auto text-background flex gap-2 rounded-lg"
           )}
         >
-          <Icons.logo className="h-6 w-6" />
           {siteConfig.hero.cta}
         </Link>
       </motion.div>

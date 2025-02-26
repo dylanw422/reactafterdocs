@@ -25,7 +25,7 @@ function HeroPill() {
         ✨
       </div>
       <p className="text-xs font-medium text-primary sm:text-sm">
-        Introducing gState
+        Introducing After App
       </p>
       <svg
         width="12"

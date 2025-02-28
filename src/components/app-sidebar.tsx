@@ -50,16 +50,40 @@ const data = {
           url: "/docs/after-app/installation",
         },
         {
-          title: "Production",
-          url: "/docs/after-app/production",
-        },
-        {
           title: "Routing",
           url: "/docs/after-app/routing",
         },
         {
+          title: "Route Groups",
+          url: "/docs/after-app/route-groups",
+        },
+        {
+          title: "Dynamic Routes",
+          url: "/docs/after-app/dynamic-routes",
+        },
+        {
+          title: "Layouts",
+          url: "/docs/after-app/layouts",
+        },
+        {
+          title: "Navigation",
+          url: "/docs/after-app/navigation",
+        },
+        {
+          title: "Redirects",
+          url: "/docs/after-app/redirects",
+        },
+        {
+          title: "Error Handling",
+          url: "/docs/after-app/error-handling",
+        },
+        {
           title: "Data Fetching",
           url: "/docs/after-app/data-fetching",
+        },
+        {
+          title: "Production",
+          url: "/docs/after-app/production",
         },
       ],
     },
